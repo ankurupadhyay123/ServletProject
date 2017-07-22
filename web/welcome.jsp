@@ -87,6 +87,8 @@
 </head>
 
 <body style="background:url('backgroundImage.jpg'); background-size: 100% 100%; height:100vh; width:100%; padding:0; margin:0;">
+
+<%--TODO: Never use repo in view layer--%>
 <%  BlogDao blogDao = new BlogDaoImpl();
 	List<Blog> blogs = blogDao.getAll();
 	Iterator<Blog> blogIterator = blogs.iterator();

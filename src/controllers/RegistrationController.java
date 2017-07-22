@@ -51,7 +51,10 @@ public class RegistrationController extends HttpServlet {
 
 		UserDao userDao=new UserDaoImpl();
 
+
+		//TODO: Just For future referennce . Handle cases where save fails using exception handling. In that case show appropriate message to user
 			userDao.save(user);
+
 
 			RequestDispatcher r2 = request.getRequestDispatcher("welcome.jsp");
 			out.println("<div style='background-color:green; font-size:22px'><center>You are successfully Registered!!</center></div>");

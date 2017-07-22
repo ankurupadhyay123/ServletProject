@@ -30,6 +30,8 @@ public class BlogController extends HttpServlet {
         session.setAttribute("savedUserBlog",blogData);
 
         Blog blog = new Blog();
+
+        //TODO: I don't think u need to set id explicitly. If GeneratedValue has been used
         blog.setBlogid(x+1);
         blog.setUserName(userName);
         blog.setBlogdata(blogData);

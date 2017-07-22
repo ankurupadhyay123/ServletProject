@@ -31,6 +31,7 @@ public class LoginController extends HttpServlet {
 		String uname = request.getParameter("uname");
 		String pass = request.getParameter("pass");
 
+		// TODO: Good to have: create a util to get session / setting attribute and getting attribute
 		HttpSession session = request.getSession();
 		session.setAttribute("savesUserName",uname);
 		session.setAttribute("savesPassword",pass);
